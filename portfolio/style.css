@@ -1,0 +1,152 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #ccc;
+    background-image: url(images/handsome.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+}
+nav{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+nav h3{
+    color: #333;
+    font-size: 30px;
+    text-transform: capitalize;
+    position: relative;
+    top: 20px;
+}
+nav h3 span::after{
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: blueviolet;
+    position: absolute;
+    left: 70px;
+    top: 20px;
+}
+.container-links ul li{
+    list-style: none;
+    display: inline-block;
+    margin-top: 33px;
+    margin-left: 20px;
+}
+.container-links ul li a{
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.container-links ul li a:hover{
+    color: blueviolet;
+    transition: color 1s;
+}
+.button a{
+    top: 33px;
+    position: relative;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: blueviolet;
+    border-radius: 4px;
+    text-transform: capitalize;
+}
+.button a:hover{
+    background-color: transparent;
+    border: 1px solid blueviolet;
+    color: #111;
+    transition: background 1s;
+}
+.main-content{
+
+    position:relative;
+    width: 100%;
+}
+.col-2{
+    background-image: url(images/handsome.webp);
+    width: 200px;
+    height: 300px;
+}
+.col-1{
+    position: absolute;
+    top: 200px;
+    left: 60px;
+}
+.col-1 h3{
+    font-size: 40px;
+    text-transform: capitalize;
+    color: #333;
+    margin-bottom: 20px;
+}
+.col-1 h3 span{
+    color: blueviolet;
+    margin-left: 2px;
+}
+.col-1 h4{
+    color: #333;
+    font-size:30px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.col-1 p{
+    font-size: 14px;
+    color: #333;
+}
+.col-1 .button-links{
+    margin-top: 40px;
+}
+.col-1 .button-links a{
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid blueviolet;
+    border-radius: 4px;
+}
+.col-1 .first{
+    background-color: blueviolet;
+    color: #fff;
+    text-transform: capitalize;
+}
+.col-1 .first:hover{
+    background-color: transparent;
+    transition: background 1s;
+    border: 1px solid blueviolet;
+    color: #333;
+}
+.col-1 a:not(.first):hover{
+    background-color: blueviolet;
+    color: #fff;
+    transition: background 1s;
+}
+.follow-us-container{
+    margin-top: 40px;
+}
+.follow-us-container ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 60px;
+}
+.follow-us-container ul li a{
+    padding: 10px;
+    color: #fff;
+    background-color: blueviolet;
+    border-radius: 50%;
+}
+.follow-us-container ul li a:hover{
+    background-color: transparent;
+    border: 1px solid blueviolet;
+    transition: background 1s;
+    color: #333;
+}
